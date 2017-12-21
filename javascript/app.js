@@ -15,11 +15,18 @@ e.preventDefault();
       }).done(function(response) {
 
         console.log(response);
-      
+        
+
     
     
     });
 });
+
+// This button clears the top articles section
+$("#clear-all").on("click", function() {
+    articleCounter = 0;
+    $("#well-section").empty();
+  });
 
 // end
 });
